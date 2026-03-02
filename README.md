@@ -1,103 +1,109 @@
-🎵 NeoTune
+# 🎵 NeoTune
 
-NeoTune es una aplicación musical diseñada para ofrecer una experiencia
-moderna, intuitiva y personalizada para los amantes de la música.
-Permite reproducir canciones, organizar playlists y gestionar contenido
-musical de manera eficiente.
+Aplicación musical para **gestionar y reproducir música**, con organización por **artistas, álbumes y playlists**.  
+Interfaz simple y enfocada en una experiencia de uso clara.
 
-------------------------------------------------------------------------
+---
 
-📌 Descripción del Proyecto
+## 📌 Contenido
+- [Descripción](#-descripción)
+- [Funciones](#-funciones)
+- [Estructura del proyecto](#-estructura-del-proyecto)
+- [Base de datos](#-base-de-datos)
+- [Tecnologías](#-tecnologías)
+- [Instalación y ejecución](#-instalación-y-ejecución)
+- [Mejoras futuras](#-mejoras-futuras)
+- [Autor](#-autor)
 
-NeoTune es un sistema enfocado en la gestión y reproducción de música
-digital. Está pensado para usuarios que desean:
+---
 
--   Reproducir música fácilmente
--   Crear y administrar playlists
--   Gestionar artistas y álbumes
--   Disfrutar de una interfaz moderna y dinámica
+## 🧾 Descripción
+**NeoTune** es un proyecto orientado a la **gestión de música digital**. Permite organizar contenido musical y acceder rápidamente a canciones mediante búsqueda y filtros.
 
-------------------------------------------------------------------------
+---
 
-🚀 Funcionalidades Principales
+## ✅ Funciones
+- 🎤 Gestión de artistas  
+- 💿 Gestión de álbumes  
+- 🎶 Gestión de canciones  
+- 📂 Playlists (creación y administración)  
+- 🔎 Búsqueda de canciones  
+- 🖥️ Interfaz amigable
 
--   🎶 Reproducción de canciones
--   📂 Gestión de playlists
--   👤 Registro e inicio de sesión de usuarios
--   🎤 Gestión de artistas
--   💿 Gestión de álbumes
--   🔍 Búsqueda de canciones
--   📊 Organización estructurada de datos
--   🖥️ Interfaz amigable
+---
 
-------------------------------------------------------------------------
+## 🏗️ Estructura del proyecto
+> Estructura recomendada (puedes ajustarla según tu repo).
 
-🏗️ Estructura del Proyecto
+```text
+NeoTune/
+├─ src/
+│  ├─ main/
+│  ├─ models/
+│  ├─ controllers/
+│  └─ views/
+├─ database/
+│  └─ scripts.sql
+├─ assets/
+│  └─ images/
+└─ README.md
+```
 
-NeoTune/ │ ├── src/ │ ├── main/ │ ├── models/ │ ├── controllers/ │ ├──
-views/ │ ├── database/ │ └── scripts.sql │ ├── assets/ │ └── images/ │
-└── README.md
+---
 
-------------------------------------------------------------------------
-
-🗄️ Base de Datos
-
+## 🗄️ Base de datos
 Tablas principales sugeridas:
+- **Usuario**
+- **Canción**
+- **Artista**
+- **Álbum**
+- **Playlist**
+- **Playlist_Canción** (relación muchos-a-muchos)
+- **Reproducción** (historial / métricas)
 
--   Usuario
--   Canción
--   Artista
--   Álbum
--   Playlist
--   Playlist_Canción
--   Reproducción
+> Si ya tienes un script en `database/scripts.sql`, úsalo como fuente principal.
 
-------------------------------------------------------------------------
+---
 
-🛠️ Tecnologías Utilizadas
+## 🛠️ Tecnologías
+- **Lenguaje:** Java  
+- **IDE:** Apache NetBeans (recomendado)  
+- **BD:** SQL Server (opcional, si tu proyecto usa persistencia)  
+- **Control de versiones:** Git / GitHub  
 
--   Lenguaje de programación: Java
--   Base de datos: SQL Server
--   IDE: NetBeans
--   Control de versiones: Git
+---
 
-------------------------------------------------------------------------
+## ⚙️ Instalación y ejecución
+1. **Clona el repositorio**
+   ```bash
+   git clone https://github.com/NilverTI/NeoTune.git
+   ```
 
-⚙️ Instalación y Configuración
+2. **Abre el proyecto en NetBeans**
+   - `File > Open Project` y selecciona la carpeta **NeoTune**.
 
-1.  Clonar el repositorio
-2.  Configurar la base de datos
-3.  Ejecutar los scripts SQL
-4.  Ejecutar la aplicación
+3. **(Opcional) Configura la base de datos**
+   - Ejecuta `database/scripts.sql` en tu gestor de SQL Server.
+   - Ajusta tu cadena de conexión en el proyecto (si aplica).
 
-------------------------------------------------------------------------
+4. **Ejecuta el proyecto**
+   - Click derecho sobre el proyecto → **Run**.
 
-🔐 Seguridad
+---
 
--   Validación de datos en formularios
--   Protección de credenciales
--   Restricciones UNIQUE en correos electrónicos
+## 📈 Mejoras futuras
+- ⭐ Sistema de recomendaciones
+- 🌙 Modo oscuro
+- 📊 Estadísticas de reproducción
+- 🌐 Integración con APIs externas
+- 📱 Versión móvil
 
-------------------------------------------------------------------------
+---
 
-📈 Mejoras Futuras
+## 👨‍💻 Autor
+**Nilver Tantalean Inga** — Ingeniería de Sistemas
 
--   Sistema de recomendaciones
--   Modo oscuro
--   Estadísticas de reproducción
--   Integración con APIs externas
--   Aplicación móvil
+---
 
-------------------------------------------------------------------------
-
-👨‍💻 Autor
-
-Proyecto NeoTune
-Autor: Nilver Tantalean Inga
-Ingeniería de Sistemas
-
-------------------------------------------------------------------------
-
-🎧 NeoTune
-
-Feel the Music. Live the Moment.
+## 🎧 NeoTune
+**Feel the Music. Live the Moment.**
