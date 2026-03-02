@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/search"
+        android:shortcutId="search"
+        android:shortcutShortLabel="@string/search">
+        <intent
+            android:action="com.tantalean.neotune.action.SEARCH"
+            android:targetClass="com.tantalean.neotune.MainActivity"
+            android:targetPackage="com.tantalean.neotune" />
+    </shortcut>
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/explore"
+        android:shortcutId="explore"
+        android:shortcutShortLabel="@string/explore">
+        <intent
+            android:action="com.tantalean.neotune.action.EXPLORE"
+            android:targetClass="com.tantalean.neotune.MainActivity"
+            android:targetPackage="com.tantalean.neotune" />
+    </shortcut>
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/library_music"
+        android:shortcutId="library"
+        android:shortcutShortLabel="@string/filter_library">
+        <intent
+            android:action="com.tantalean.neotune.action.LIBRARY"
+            android:targetClass="com.tantalean.neotune.MainActivity"
+            android:targetPackage="com.tantalean.neotune" />
+    </shortcut>
+</shortcuts>
